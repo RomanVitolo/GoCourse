@@ -5,11 +5,22 @@ import (
 	"runtime"
 
 	"github.com/RomanVitolo/GoCourse/exercises"
+	"github.com/RomanVitolo/GoCourse/keyboard"
 	"github.com/RomanVitolo/GoCourse/variables"
 )
 
 func main() {
 
+	//GetExercises()
+	//GetOS()
+	keyboard.GetNumbers()
+}
+
+func GetInputs() {
+
+}
+
+func GetExercises() {
 	numberText01, textNumber01 := exercises.TestFunction("500")
 	fmt.Println(numberText01)
 	fmt.Println(textNumber01 + "\n")
@@ -17,7 +28,9 @@ func main() {
 	numberText02, textNumber02 := exercises.TestFunction("90")
 	fmt.Println(numberText02)
 	fmt.Println(textNumber02 + "\n")
+}
 
+func GetOS() {
 	state, text := variables.ConvertToText(1588)
 	fmt.Println(state)
 	fmt.Println(text)
